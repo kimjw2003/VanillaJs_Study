@@ -1,10 +1,21 @@
-const mon = "Mon";
-const tue = "Tue";
-const wed = "Wed";
-const thu = "Thu";
-const fri = "Fri";
 
-console.log(mon, tue, wed, thu, fri);
+const KimInfo = {
+    name : "Kim", 
+    age : 19,
+    gender :  true,
+    city : "Korea",
+    favNum : ["123",
+     "456"],
+    favPerson : [
+        {
+            name: "Lee",
+            age: "19"
+        },
+        {
+            name: "Son",
+            age: "19"
+        }
+    ]
+}
 
-const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-console.log(daysOfWeek[2]);
+console.log(KimInfo.favPerson[1].name);
