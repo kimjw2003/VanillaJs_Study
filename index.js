@@ -1,12 +1,10 @@
-//String
-const what = "";
-console.log(what);
+const mon = "Mon";
+const tue = "Tue";
+const wed = "Wed";
+const thu = "Thu";
+const fri = "Fri";
 
-//Boolean
-const wat = true;
+console.log(mon, tue, wed, thu, fri);
 
-//Number
-const waat = 333;
-
-//float
-const watt = 5.4;
+const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+console.log(daysOfWeek[2]);
