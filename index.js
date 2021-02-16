@@ -1,5 +1,8 @@
 const title = document.querySelector("#title");
-title.innerHTML = "Hi";
-title.style.color = "red";
 
-document.title = "wwwww";
+function handleClick(){
+    title.style.color = "red";
+    
+}
+
+window.addEventListener("click", handleClick);
