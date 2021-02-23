@@ -1,22 +1,33 @@
-/*
-if("10" === 10){
-    console.log("yes");
-} else if("10" === "11"){
-    console.log("yes2");
-} else{
-    console.log("no")
+const title = document.querySelector("#title");
+
+const BASE_COLOR = "rgb(52, 73, 94)";
+const OTHER_COLOR = "#ff0000";
+
+function handleClick() {
+    const currentColor = title.style.color;
+
+    if(currentColor === BASE_COLOR){
+        title.style.color = OTHER_COLOR;
+        console.log("color changed");
+    } else{
+        title.style.color = BASE_COLOR;
+    }
 }
 
-if(20 > 5 && "kim" === "kim"){
-    console.log("yes");
-} else{
-    console.log("no");
-}
-*/
+function init(){
+    title.style.color = BASE_COLOR;
+    title.addEventListener("click", handleClick);
 
-const age = prompt("How old are you?");
-if(age > 18 && age < 21){
-    console.log('you can drink');
-} else{
-    console.log('you cant drink');
 }
+init();
+
+function handleOffline(){
+    console.log("bye");
+}
+
+function handleOnline(){
+    console.log("hihi");
+}
+
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handleOnline);
